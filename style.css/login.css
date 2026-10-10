@@ -1,0 +1,124 @@
+:root {
+    --marrom-escuro: #3E2618;
+    --marrom: #6B4428;
+    --caramelo: #8B5E34;
+    --dourado: #C79655;
+    --bege-claro: #F4EADF;
+    --creme: #F8F1E8;
+    --texto: #3E2618;
+    --branco: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #8B5E34, #3E2618);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.login-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Box */
+.login-box {
+    max-width: 400px;
+    margin: auto;
+    background: var(--creme);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(62, 38, 24, 0.2);
+    text-align: center;
+}
+
+/* Título */
+.login-box h2 {
+    color: var(--marrom-escuro);
+    margin-bottom: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.login-box p {
+    color: #7A6758;
+    margin-bottom: 25px;
+}
+
+/* Campos */
+.campo {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--marrom-escuro);
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8c4af;
+    border-radius: 10px;
+    outline: none;
+    background: #fff;
+}
+
+.campo input:focus {
+    border-color: var(--caramelo);
+    box-shadow: 0 0 0 3px rgba(139, 94, 52, 0.2);
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    background: var(--marrom);
+    color: white;
+    padding: 14px;
+    border-radius: 999px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--caramelo);
+    transform: translateY(-2px);
+}
+
+/* Link */
+.extra {
+    display: block;
+    margin-top: 20px;
+    color: #7A6758;
+}
+
+.extra a {
+    color: var(--marrom);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.extra a:hover {
+    color: var(--caramelo);
+}
+
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+

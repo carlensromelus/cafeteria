@@ -1,0 +1,200 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #F5EBDD;
+    color: #4B2E2B;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #4B2E2B;
+    padding: 15px 30px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 22px;
+}
+
+.navbar a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #C68B59;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* CARD */
+.card {
+    background: #FFF8F0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* BOTÃO SAIR DESTACADO */
+.btn-sair {
+    background: linear-gradient(135deg, #a94442, #d9534f);
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* HOVER */
+.btn-sair:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* TITULOS */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #C68B59;
+}
+
+/* BOTÃO */
+button {
+    background-color: #6F4E37;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #C68B59;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #4B2E2B;
+    color: #FFF;
+    padding: 12px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* BOTÕES AÇÃO */
+.btn-editar {
+    background-color: #C68B59;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-excluir {
+    background-color: #a94442;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-editar:hover {
+    opacity: 0.8;
+}
+
+.btn-excluir:hover {
+    opacity: 0.8;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+.lista h2 {
+    margin-bottom: 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF8F0;
+    border-left: 5px solid #C68B59;
+}
+
+.card .info {
+    max-width: 70%;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.card .info h3 {
+    margin-bottom: 5px;
+}
+
+.card .info p {
+    margin: 3px 0;
+}
